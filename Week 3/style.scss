@@ -1,0 +1,111 @@
+$font-stack: Princess Sofia;
+$primary-style: cursive;
+$base-color: #AD141E;
+$newColor: change_color(#AD141E, $red: 100, $blue: 20);
+$newColor2: change_color(#AD141E, $red: 50, $blue: 40, $green: 28);
+$newColor3: change_color(#AD141E, $red: 10, $blue: 100, $green: 80);
+
+@mixin linear-gradient($align, $color, $color2){
+	background: linear-gradient($align, $color, $color2);
+	background: -moz-linear-gradient($align, $color, $color2);
+	background: -webkit-linear-gradient($align, $color, $color2);
+}
+
+@mixin border-radius($radius){
+	border-radius: $radius;
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+}
+
+html{
+	@include linear-gradient(to right, #ffffff 25%, #dddddd 75%);
+	background-size: cover;
+	height: 100%;
+}
+body {
+	width: 50em;
+	margin: auto;
+	font-family: Verdana;
+	font-size: 12px;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+header,
+article,
+footer {
+  @include border-radius(8px);
+  background-color: lighten($base-color, 50%);
+  width: 640px;
+  border: 1px solid #000000;
+  margin-bottom: 4px;
+  padding: 8px;
+}
+header h1 {
+  font-family: 100% $font-stack, $primary-style;
+  text-align: center;
+  font-size: 24px;
+  color: $newColor;
+}
+nav {
+  width: 640px;
+  clear: left;
+  float: left;
+  overflow: hidden;
+}
+nav ul {
+  height: 40px;
+  clear: left;
+  float: left;
+  position: relative;
+  left: 50%;
+  text-align: center;
+}
+nav ul li {
+  float: left;
+  position: relative;
+  right: 50%;
+}
+nav ul li a {
+  @include border-radius(4px);
+  @include linear-gradient(bottom, $newColor2 24%, $newColor3 86%);
+  display: block;
+  line-height: 30px;
+  padding: 0 20px 0 20px;
+  margin: 0 4px 0 4px;
+  color: #ffffff;
+  text-decoration: none;
+  border: 2px outset #ffffff;
+}
+nav ul li a:hover {
+  @include linear-gradient(bottom, #5C4294 24%, #7A9362 86%);
+}
+article {
+  float: left;
+  line-height: 140%;
+}
+article img {
+  @include border-radius(4px);
+  float: right;
+  border: 2px solid #000;
+  margin-left: 8px;
+}
+article h2 {
+  font-family: 100% $font-stack, $primary-style;
+  font-size: 21.6px;
+  line-height: 140%;
+}
+article h3 {
+  font-family: 100% $font-stack, $primary-style;
+  font-size: 19.200000000000003px;
+  line-height: 140%;
+  margin-top: 8px;
+}
+article p {
+  margin-bottom: 12px;
+}
+footer {
+  float: left;
+  text-align: center;
+}
