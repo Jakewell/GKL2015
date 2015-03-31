@@ -1,36 +1,41 @@
-html{
-	background-image: linear-gradient(bottom, #ffffff 24%, #dddddd 86%);
-	background-image: -moz-linear-gradient(bottom, #ffffff 24%, #dddddd 86%);
-	background-image: -webkit-linear-gradient(bottom, #ffffff 24%, #dddddd 86%);
-	background-size: cover;
-	height: 100%;
+html {
+  background: linear-gradient(to right, #ffffff 25%, #dddddd 75%);
+  background: -moz-linear-gradient(to right, #ffffff 25%, #dddddd 75%);
+  background: -webkit-linear-gradient(to right, #ffffff 25%, #dddddd 75%);
+  background-size: cover;
+  height: 100%;
 }
+
 body {
-	width: 50em;
-	margin: auto;
-	font-family: Verdana;
-	font-size: 12px;
-	height: 100%;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+  width: 50em;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
+
 header,
 article,
 footer {
-  background-color: #eeeeee;
   border-radius: 8px;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
+  background-color: #f9c7cb;
   width: 640px;
   border: 1px solid #000000;
   margin-bottom: 4px;
   padding: 8px;
 }
+
 header h1 {
-  font-family: 'Princess Sofia', cursive;
+  font-family: 100% Princess Sofia, cursive;
   text-align: center;
   font-size: 24px;
+  color: #641414;
 }
+
 nav {
   width: 640px;
   clear: left;
@@ -54,26 +59,28 @@ nav ul li a {
   border-radius: 4px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
+  background: linear-gradient(bottom, #321c28 24%, #0a5064 86%);
+  background: -moz-linear-gradient(bottom, #321c28 24%, #0a5064 86%);
+  background: -webkit-linear-gradient(bottom, #321c28 24%, #0a5064 86%);
   display: block;
   line-height: 30px;
   padding: 0 20px 0 20px;
   margin: 0 4px 0 4px;
-  background-image: linear-gradient(bottom, #4d7cf2 24%, #5c95ff 86%);
-  background-image: -moz-linear-gradient(bottom, #4d7cf2 24%, #5c95ff 86%);
-  background-image: -webkit-linear-gradient(bottom, #4d7cf2 24%, #5c95ff 86%);
   color: #ffffff;
   text-decoration: none;
   border: 2px outset #ffffff;
 }
 nav ul li a:hover {
-  background-image: linear-gradient(bottom, #5c95ff 24%, #6caeff 86%);
-  background-image: -moz-linear-gradient(bottom, #5c95ff 24%, #6caeff 86%);
-  background-image: -webkit-linear-gradient(bottom, #5c95ff 24%, #6caeff 86%);
+  background: linear-gradient(bottom, #5C4294 24%, #7A9362 86%);
+  background: -moz-linear-gradient(bottom, #5C4294 24%, #7A9362 86%);
+  background: -webkit-linear-gradient(bottom, #5C4294 24%, #7A9362 86%);
 }
+
 article {
   float: left;
   line-height: 140%;
 }
+
 article img {
   border-radius: 4px;
   -moz-border-radius: 4px;
@@ -82,20 +89,24 @@ article img {
   border: 2px solid #000;
   margin-left: 8px;
 }
+
 article h2 {
-  font-family: 'Princess Sofia', cursive;
+  font-family: 100% Princess Sofia, cursive;
   font-size: 21.6px;
   line-height: 140%;
 }
+
 article h3 {
-  font-family: 'Princess Sofia', cursive;
+  font-family: 100% Princess Sofia, cursive;
   font-size: 19.200000000000003px;
   line-height: 140%;
   margin-top: 8px;
 }
+
 article p {
   margin-bottom: 12px;
 }
+
 footer {
   float: left;
   text-align: center;

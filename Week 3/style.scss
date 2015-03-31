@@ -53,34 +53,39 @@ nav {
   clear: left;
   float: left;
   overflow: hidden;
+  
+	ul {
+		height: 40px;
+		clear: left;
+		float: left;
+		position: relative;
+		left: 50%;
+		text-align: center;
+	}
+	
+	ul li {
+		float: left;
+		position: relative;
+		right: 50%;
+	}
+
+	ul li a {
+		@include border-radius(4px);
+		@include linear-gradient(bottom, $newColor2 24%, $newColor3 86%);
+		display: block;
+		line-height: 30px;
+		padding: 0 20px 0 20px;
+		margin: 0 4px 0 4px;
+		color: #ffffff;
+		text-decoration: none;
+		border: 2px outset #ffffff;
+	}
+	
+	ul li a:hover {
+		@include linear-gradient(bottom, #5C4294 24%, #7A9362 86%);
+	}
 }
-nav ul {
-  height: 40px;
-  clear: left;
-  float: left;
-  position: relative;
-  left: 50%;
-  text-align: center;
-}
-nav ul li {
-  float: left;
-  position: relative;
-  right: 50%;
-}
-nav ul li a {
-  @include border-radius(4px);
-  @include linear-gradient(bottom, $newColor2 24%, $newColor3 86%);
-  display: block;
-  line-height: 30px;
-  padding: 0 20px 0 20px;
-  margin: 0 4px 0 4px;
-  color: #ffffff;
-  text-decoration: none;
-  border: 2px outset #ffffff;
-}
-nav ul li a:hover {
-  @include linear-gradient(bottom, #5C4294 24%, #7A9362 86%);
-}
+
 article {
   float: left;
   line-height: 140%;
