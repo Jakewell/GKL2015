@@ -1,9 +1,9 @@
 <div id="calendar">
 <?php
-    $host = 'mysql.metropolia.fi';
-    $dbname = 'jarkkoss'; // your username
-    $user = 'jarkkoss'; // your username
-    $pass = '65sa495'; // your database password
+    $host = '';
+    $dbname = ''; // your username
+    $user = ''; // your username
+    $pass = ''; // your database password
     
     try {
             $DBH = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
