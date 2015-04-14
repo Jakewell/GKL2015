@@ -1,0 +1,25 @@
+{% block content %}
+
+<div class="row">
+	<div class="medium-12 columns">
+		<h1 class="text-center">Resize image with slider</h1>
+	</div>
+</div>
+
+<div class="row">
+	<div class="medium-12 columns">
+		<div id ="imageSlider" class="range-slider" data-slider data-options="start: 1; end: 100;">
+			<span class="range-slider-handle" role="slider" tabindex="0"></span>
+			<span class="range-slider-active-segment"></span>
+			<input type="hidden">
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="medium-12 columns text-center">
+		<img id="testImage" src="assets/img/gal1.png">
+	</div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,11 @@
+{{ "jquery.js" | asset_url | script_tag }}
+{{ "/assets/js/foundation.js" | asset_url | script_tag }}
+{{ "//cdn.jsdelivr.net/jquery.slick/1.4.0/slick.min.js" | script_tag }}
+<script>
+$('[data-slider]').on('change.fndtn.slider', function(){
+	var sliderValue = $('#imageSlider').attr('data-slider');
+	$("#testImage").width(sliderValue*10);
+});
+
+$(document).foundation();
+</script>
